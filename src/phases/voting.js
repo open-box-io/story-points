@@ -11,7 +11,7 @@ const onInitialisation = () => {
 
 const onSubmit = () => {
     if (context.component === 2) {
-        phaseName = `VIEW`;
+        phaseName = `view`;
     } else {
         gameState.storyPoints = gameState.storyPoints.filter(
             (points) => points.player._id !== context.playerView.player._id,
