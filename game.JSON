@@ -1,5 +1,3 @@
 {
-    "name": "Story Points",
-    "description": "A voting system for agile story points",
     "initialPhaseName": "voting"
 }

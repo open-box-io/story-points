@@ -12,7 +12,7 @@ const recalculateAllViews = (voting) => {
                 data: gameState.storyPoints
                     .filter((points) => points.points !== `hidden`)
                     .map((points) => ({
-                        text: `${voting ? `?` : points.points}\\n${
+                        text: `${voting ? `?` : points.points}\n${
                             points.player.name
                         }`,
                         selected: !points.points,
