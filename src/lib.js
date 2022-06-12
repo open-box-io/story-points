@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-undef */
 
-const options = [`hidden`, 1, 2, 3, 5, 8, 13];
+const options = resources.points;
 
 const recalculateAllViews = (voting) => {
     playerViews = players.map((player) => ({
