@@ -19,20 +19,26 @@ const recalculateAllViews = (voting) => {
                     })),
             },
             {
-                type: `CARD_LIST`,
-                data: options.map((option) => {
-                    const points = gameState.storyPoints.find(
-                        (points) => points.player._id === player._id,
-                    );
-                    const isSelected = points && points.points === option;
-
-                    return {
-                        text: option,
-                        selected: isSelected,
-                    };
-                }),
-                settings: {
-                    maxSelectable: 1,
+                type: "TITLE",
+                data: {
+                    title: "Pick a Card",
+                },
+                child: {
+                    type: `CARD_LIST`,
+                    data: options.map((option) => {
+                        const points = gameState.storyPoints.find(
+                            (points) => points.player._id === player._id,
+                        );
+                        const isSelected = points && points.points === option;
+    
+                        return {
+                            text: option,
+                            selected: isSelected,
+                        };
+                    }),
+                    settings: {
+                        maxSelectable: 1,
+                    },
                 },
             },
             {

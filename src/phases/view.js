@@ -13,7 +13,7 @@ const onSubmit = () => {
             (points) => points.player._id !== context.playerView.player._id,
         );
 
-        const newPoints = context.playerView.view[1].data.find(
+        const newPoints = context.playerView.view[1].child.data.find(
             (card) => card.selected,
         );
 
